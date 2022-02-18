@@ -1,9 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -13,4 +16,91 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.hero-section {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(1, 7, 24, 1) 77%,
+    rgba(4, 16, 50, 1) 96%
+  );
+}
+.project-section {
+  background: #041032;
+}
+.contact-section {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(1, 7, 24, 1) 0%,
+    rgba(4, 16, 50, 1) 23%,
+    rgba(0, 0, 0, 1) 96%
+  );
+}
+
+/* Scroller styling */
+.scroller {
+  height: 1.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+}
+.scroller > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: slide 7s infinite;
+  font-weight: bold;
+}
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.2em;
+  }
+  50% {
+    top: -2.4em;
+  }
+  75% {
+    top: -3.6em;
+  }
+}
+
+/* Carousel */
+@keyframes carouselAnim {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(calc(-100% + (6 * 200px)));
+  }
+}
+@keyframes carouselAnimReverse {
+  from {
+    transform: translate(calc(-100% + (6 * 200px)));
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container .carousel-items {
+    animation: carouselAnim 60s infinite alternate linear;
+  }
+  @keyframes carouselAnim {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(calc(-100% + (5 * 200px)));
+    }
+  }
+}
+
+.carousel-focus:hover {
+  transition: all 0.8s;
+  transform: scale(1.1);
 }
