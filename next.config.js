@@ -1,5 +1,5 @@
 module.exports = {
   reactStrictMode: true,
-  basePath: "/",
-  assetPrefix: "/"
+  basePath: "/me",
+  assetPrefix: "/me"
 };
