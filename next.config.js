@@ -1,5 +1,5 @@
 module.exports = {
   reactStrictMode: true,
-  basePath: "/me",
-  assetPrefix: "/me"
+  basePath: "https://rosalallankenneth.github.io/me",
+  assetPrefix: "https://rosalallankenneth.github.io/me"
 };
