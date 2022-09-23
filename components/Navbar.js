@@ -30,7 +30,11 @@ export default function Navbar() {
           <div className="relative w-24 p-3">
             <Link href="/">
               <a>
-                <img src="/images/logo-dark.png" className="object-fill" />
+                <img
+                  src="/images/logo-dark.png"
+                  alt="logo"
+                  className="object-fill"
+                />
               </a>
             </Link>
           </div>

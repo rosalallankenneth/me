@@ -8,7 +8,7 @@ export default function ContactSection() {
           </h2>
           <div className="h-1 bg-blue-700 w-10 rounded my-4 mx-auto"></div>
           <p className="text-gray-300 text-center mt-3 px-5">
-            Perhaps we can help each other. Let's connect!
+            Perhaps we can help each other. Let us connect!
           </p>
         </div>
       </div>

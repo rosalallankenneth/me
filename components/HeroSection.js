@@ -38,7 +38,11 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="text-white w-full">
-            <img src="/images/hero-img.png" className="object-fill" />
+            <img
+              src="/images/hero-img.png"
+              alt="hero-image"
+              className="object-fill"
+            />
           </div>
         </div>
       </div>
