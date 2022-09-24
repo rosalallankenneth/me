@@ -103,49 +103,49 @@ export const skillsJs = [
 export const skillsBackend = [
   {
     id: 1,
-    path: "/images/skills/redux.png",
+    path: "/me/images/skills/redux.png",
     alt: "redux logo",
     label: "Redux"
   },
   {
     id: 2,
-    path: "/images/skills/firebase.png",
+    path: "/me/images/skills/firebase.png",
     alt: "firebase logo",
     label: "Firebase"
   },
   {
     id: 3,
-    path: "/images/skills/php.png",
+    path: "/me/images/skills/php.png",
     alt: "php logo",
     label: "PHP"
   },
   {
     id: 4,
-    path: "/images/skills/mysql.png",
+    path: "/me/images/skills/mysql.png",
     alt: "mysql logo",
     label: "MySQL"
   },
   {
     id: 5,
-    path: "/images/skills/graphql.png",
+    path: "/me/images/skills/graphql.png",
     alt: "graphql logo",
     label: "GraphQL"
   },
   {
     id: 6,
-    path: "/images/skills/redux.png",
+    path: "/me/images/skills/redux.png",
     alt: "redux logo",
     label: "Redux"
   },
   {
     id: 7,
-    path: "/images/skills/firebase.png",
+    path: "/me/images/skills/firebase.png",
     alt: "firebase logo",
     label: "Firebase"
   },
   {
     id: 8,
-    path: "/images/skills/php.png",
+    path: "/me/images/skills/php.png",
     alt: "php logo",
     label: "PHP"
   }
