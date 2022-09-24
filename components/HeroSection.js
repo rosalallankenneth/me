@@ -39,7 +39,7 @@ export default function HeroSection() {
           </div>
           <div className="text-white w-full">
             <img
-              src="/images/hero-img.png"
+              src={`${process.env.ASSETS_BASE}/images/hero-img.png`}
               alt="hero-image"
               className="object-fill"
             />

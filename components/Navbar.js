@@ -31,7 +31,7 @@ export default function Navbar() {
             <Link href="/">
               <a>
                 <img
-                  src="/me/images/logo-dark.png"
+                  src={`${process.env.ASSETS_BASE}/images/logo-dark.png`}
                   alt="logo"
                   className="object-fill"
                 />
