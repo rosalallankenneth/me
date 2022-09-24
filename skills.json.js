@@ -127,9 +127,9 @@ export const skillsBackend = [
   },
   {
     id: 5,
-    path: process.env.ASSETS_BASE + "/images/skills/graphql.png",
+    path: process.env.ASSETS_BASE + "/images/skills/ajax.png",
     alt: "graphql logo",
-    label: "GraphQL"
+    label: "Ajax"
   },
   {
     id: 6,
