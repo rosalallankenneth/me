@@ -31,7 +31,7 @@ export default function Navbar() {
             <Link href="/">
               <a>
                 <img
-                  src="/images/logo-dark.png"
+                  src="/me/images/logo-dark.png"
                   alt="logo"
                   className="object-fill"
                 />
