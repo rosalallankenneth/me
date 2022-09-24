@@ -3,15 +3,8 @@ import Link from "next/link";
 import Head from "next/head";
 
 export default function Navbar() {
-  const [navbarBg, setNavbarBg] = useState(false);
   const [openNavbar, setOpenNavbar] = useState(false);
-  const changeBackground = () => {
-    if (window.scrollY >= 500) {
-      setNavbarBg(true);
-    } else {
-      setNavbarBg(false);
-    }
-  };
+
   const toggleMobileNavbar = () => {
     setOpenNavbar(!openNavbar);
   };
@@ -30,11 +23,7 @@ export default function Navbar() {
           <div className="relative w-24 p-3">
             <Link href="/">
               <a>
-                <img
-                  src={`${process.env.ASSETS_BASE}/images/logo-dark.png`}
-                  alt="logo"
-                  className="object-fill"
-                />
+                <img src="/images/logo-dark.png" className="object-fill" />
               </a>
             </Link>
           </div>
@@ -77,23 +66,23 @@ export default function Navbar() {
           </div>
 
           <nav className="flex-1 md:flex hidden justify-around items-center max-w-sm">
-            <Link href="/">
-              <a className="text-gray-300 hover:bg-gray-900 px-2 py-1 transition-background duration-300 rounded">
-                Home
-              </a>
-            </Link>
-            <Link href="/projects">
+            <Link href="#projects">
               <a className="text-gray-300 hover:bg-gray-900 px-2 py-1 transition-background duration-300 rounded">
                 My Works
               </a>
             </Link>
-            <Link href="#">
+            <Link href="#knowme">
               <a className="text-gray-300 hover:bg-gray-900 px-2 py-1 transition-background duration-300 rounded">
                 About Me
               </a>
             </Link>
+            <Link href="#resume">
+              <a className="text-gray-300 hover:bg-gray-900 px-2 py-1 transition-background duration-300 rounded">
+                Resume
+              </a>
+            </Link>
             <Link href="#contactme">
-              <a className="text-gray-300 bg-blue-700 hover:bg-gray-900 px-3 py-1 transition-background duration-300 rounded">
+              <a className="text-gray-300 bg-blue-700 hover:bg-blue-900 px-3 py-1 transition-background duration-300 rounded">
                 Contact Me
               </a>
             </Link>
@@ -106,23 +95,15 @@ export default function Navbar() {
           openNavbar ? "flex" : "hidden"
         } flex-col justify-center items-left w-full bg-black border-b-2 border-gray-900 p-2`}
       >
-        <Link href="/">
+        <Link href="#projects">
           <a
             className="text-white hover:bg-gray-900 py-2 px-5 border-2 border-b-0 border-gray-900 rounded-t transition-background duration-300"
-            onClick={toggleMobileNavbar}
-          >
-            Home
-          </a>
-        </Link>
-        <Link href="/projects">
-          <a
-            className="text-white hover:bg-gray-900 py-2 px-5 border-2 border-b-0 border-gray-900 transition-background duration-300"
             onClick={toggleMobileNavbar}
           >
             My Works
           </a>
         </Link>
-        <Link href="/#">
+        <Link href="#knowme">
           <a
             className="text-white hover:bg-gray-900 py-2 px-5 border-2 border-b-0 border-gray-900 transition-background duration-300"
             onClick={toggleMobileNavbar}
@@ -130,9 +111,17 @@ export default function Navbar() {
             About Me
           </a>
         </Link>
-        <Link href="/#contactme">
+        <Link href="#resume">
           <a
-            className="text-white hover:bg-gray-900 py-2 px-5 border-2 border-gray-900 rounded-b transition-background duration-300"
+            className="text-white hover:bg-gray-900 py-2 px-5 border-2 border-b-0 border-gray-900 transition-background duration-300"
+            onClick={toggleMobileNavbar}
+          >
+            Resume
+          </a>
+        </Link>
+        <Link href="#contactme">
+          <a
+            className="text-white bg-blue-700 hover:bg-blue-900 py-2 px-5 border-2 border-gray-900 rounded-b transition-background duration-300"
             onClick={toggleMobileNavbar}
           >
             Contact Me

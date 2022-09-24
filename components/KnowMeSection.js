@@ -34,7 +34,7 @@ export default function KnowMeSection() {
               <img
                 className="absolute inset-0 w-full h-full object-cover object-center"
                 src={aboutDescription[aboutIdx].imgPath}
-                alt=""
+                alt={aboutDescription[aboutIdx].imgAlt}
               />
               <div className="absolute inset-0 w-full h-full bg-blue-900 opacity-50"></div>
               <div className="absolute inset-0 w-full h-full flex items-center justify-center fill-current text-white">
@@ -57,7 +57,7 @@ export default function KnowMeSection() {
                   className="flex items-baseline mt-5 text-blue-700 hover:text-blue-900"
                   href=""
                 >
-                  <span>Learn more</span>
+                  <span>Download my Resume</span>
                   <span className="text-xs ml-1">&#x279c;</span>
                 </a>
               </div>

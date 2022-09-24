@@ -12,7 +12,7 @@ export default function HeroSection() {
                 <br />
                 Web Designer
                 <br />
-                Innovator
+                Information Technologist
               </span>
             </h2>
 

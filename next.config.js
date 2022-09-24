@@ -1,7 +1,7 @@
 module.exports = {
   reactStrictMode: true,
-  basePath: "/me",
-  assetPrefix: "/me",
+  basePath: "/me", // '' for dev or '/me' for prod
+  assetPrefix: "/me", // '' for dev or '/me' for prod
   env: {
     ASSETS_BASE: "/me" // '' for dev or '/me' for prod
   }
