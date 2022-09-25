@@ -28,7 +28,7 @@ export default function ProjectSection() {
               href="https://github.com/rosalallankenneth?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"
-              className="border-2 border-blue-700 hover:border-blue-900 bg-blue-700 hover:bg-blue-900 p-3 text-white rounded transition-background duration-300"
+              className="border-2 border-blue-900 hover:border-blue-700 bg-blue-900 hover:bg-blue-700 p-3 text-white rounded transition-background duration-300"
             >
               More on my Github
             </a>
@@ -36,7 +36,7 @@ export default function ProjectSection() {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              className="border-2 border-blue-700 hover:border-blue-900 bg-transparent hover:bg-blue-900 p-3 text-white rounded transition-background duration-300"
+              className="border-2 border-blue-900 hover:border-blue-700 bg-transparent hover:bg-blue-700 p-3 text-white rounded transition-background duration-300"
             >
               Download my Resume
             </a>

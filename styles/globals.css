@@ -104,3 +104,10 @@ a {
   transition: all 0.8s;
   transform: scale(1.1);
 }
+
+#baybayin-logo {
+  color: rgb(255, 217, 0);
+  font-size: 30px;
+  font-family: forte;
+  letter-spacing: 2px;
+}

@@ -23,7 +23,10 @@ export default function Navbar() {
           <div className="relative w-24 p-3">
             <Link href="/">
               <a>
-                <img src="/images/logo-dark.png" className="object-fill" />
+                <img
+                  src={`${process.env.ASSETS_BASE}/images/logo-dark.png`}
+                  className="object-fill"
+                />
               </a>
             </Link>
           </div>

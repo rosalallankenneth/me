@@ -21,7 +21,7 @@ export default function HeroSection() {
               Allan Kenneth Rosal
             </h1>
             <p className="text-gray-300 mt-5 md:text-left text-center">
-              I turn design into code, and code into product.
+              I transform design into code, and code into product.
             </p>
 
             <div className="mt-10 text-center md:text-left">
