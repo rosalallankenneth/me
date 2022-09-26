@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { aboutDescription } from "../public/about.json";
+import Resume from "./Resume.js";
 
 export default function KnowMeSection() {
   const [aboutIdx, setAboutIdx] = useState(0);
@@ -38,10 +39,10 @@ export default function KnowMeSection() {
               />
               <div className="absolute inset-0 w-full h-full bg-blue-900 opacity-50"></div>
               <div className="absolute inset-0 w-full h-full flex items-center justify-center fill-current text-white">
-                <p className="lg:block md:hidden block text-4xl font-bold italic text-center">
+                <p className="lg:block hidden text-4xl font-bold italic text-center">
                   {aboutDescription[aboutIdx].title}
                 </p>
-                <p className="lg:hidden md:block hidden text-4xl font-bold italic text-center leading-tight">
+                <p className="lg:hidden block text-4xl font-bold italic text-center leading-tight">
                   {aboutDescription[aboutIdx].title.split(" ")[0]} <br />
                   {aboutDescription[aboutIdx].title.split(" ")[1]}{" "}
                   {aboutDescription[aboutIdx].title.split(" ")[2]}
@@ -53,13 +54,10 @@ export default function KnowMeSection() {
                 <p className="text-gray-700 lg:text-lg md:text-sm text-lg">
                   {aboutDescription[aboutIdx].description}
                 </p>
-                <a
-                  className="flex items-baseline mt-5 text-blue-700 hover:text-blue-900"
-                  href=""
-                >
-                  <span>Download my Resume</span>
+                <Resume classes="flex items-baseline mt-5 text-blue-700 hover:text-blue-900">
+                  <span>View my Resume</span>
                   <span className="text-xs ml-1">&#x279c;</span>
-                </a>
+                </Resume>
               </div>
               <svg
                 className="hidden md:block absolute inset-y-0 h-full w-24 fill-current text-white -ml-12"

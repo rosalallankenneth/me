@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Head from "next/head";
+import Resume from "./Resume";
 
 export default function Navbar() {
   const [openNavbar, setOpenNavbar] = useState(false);
@@ -18,7 +19,10 @@ export default function Navbar() {
           rel="stylesheet"
         />
       </Head>
-      <header className="w-full bg-black border-b-2 border-gray-900 p-2 z-10 transition-all ease-in-out">
+      <header
+        id="top"
+        className="w-full bg-black border-b-2 border-gray-900 p-2 z-10 transition-all ease-in-out"
+      >
         <div className="md:container md:mx-auto flex justify-between">
           <div className="relative w-24 p-3">
             <Link href="/">
@@ -79,11 +83,9 @@ export default function Navbar() {
                 About Me
               </a>
             </Link>
-            <Link href="#resume">
-              <a className="text-gray-300 hover:bg-gray-900 px-2 py-1 transition-background duration-300 rounded">
-                Resume
-              </a>
-            </Link>
+            <Resume classes="text-gray-300 hover:bg-gray-900 px-2 py-1 transition-background duration-300 rounded">
+              Resume
+            </Resume>
             <Link href="#contactme">
               <a className="text-gray-300 bg-blue-700 hover:bg-blue-900 px-3 py-1 transition-background duration-300 rounded">
                 Contact Me

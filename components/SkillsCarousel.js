@@ -7,14 +7,14 @@ export default function SkillsCarousel(props) {
       >
         <div className="w-full h-full absolute">
           <div
-            className="w-1/4 h-full absolute z-50 left-0"
+            className="w-1/4 h-full absolute z-30 left-0"
             style={{
               background:
                 "linear-gradient(to right, #edf2f7 0%, rgba(255, 255, 255, 0) 100%)"
             }}
           ></div>
           <div
-            className="w-1/4 h-full absolute z-50 right-0"
+            className="w-1/4 h-full absolute z-30 right-0"
             style={{
               background:
                 "linear-gradient(to left, #edf2f7 0%, rgba(255, 255, 255, 0) 100%)"

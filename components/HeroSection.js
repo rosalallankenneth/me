@@ -24,9 +24,9 @@ export default function HeroSection() {
               I transform design into code, and code into product.
             </p>
 
-            <div className="mt-10 text-center md:text-left">
+            <div className="flex sm:flex-row flex-col md:justify-start justify-center items-center sm:space-x-5 space-x-0 sm:space-y-0 space-y-3 mt-10 text-center md:text-left">
               <a href="#projects">
-                <button className="text-center bg-blue-700 hover:bg-blue-500 text-white px-5 p-2 rounded font-bold mr-5 transition-background duration-300">
+                <button className="text-center bg-blue-700 hover:bg-blue-500 text-white px-5 p-2 rounded font-bold transition-background duration-300">
                   What I do
                 </button>
               </a>

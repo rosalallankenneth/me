@@ -5,6 +5,7 @@ import ProjectSection from "../components/ProjectSection";
 import SKillSection from "../components/SkillSection";
 import KnowMeSection from "../components/KnowMeSection";
 import ContactSection from "../components/ContactSection";
+import SidebarMenu from "../components/SidebarMenu";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <SKillSection />
       <KnowMeSection />
       <ContactSection />
+      <SidebarMenu />
     </>
   );
 }
