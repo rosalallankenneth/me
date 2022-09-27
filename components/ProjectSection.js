@@ -1,10 +1,21 @@
+import { useState } from "react";
 import ProjectCard from "./projects/ProjectCard";
 import { projectsDescription } from "../public/projects.json";
 import Resume from "./Resume";
+import ModalProjectInfo from "./projects/ModalProjectInfo";
 
 export default function ProjectSection() {
+  const [projectInfo, setProjectInfo] = useState(null);
+
   return (
     <>
+      {projectInfo && (
+        <ModalProjectInfo
+          projectInfo={projectInfo}
+          setProjectInfo={setProjectInfo}
+        />
+      )}
+
       <div
         id="projects"
         className="project-section w-full min-h-screen bg-blue-700 py-10"
@@ -21,7 +32,11 @@ export default function ProjectSection() {
           </p>
           <div className="max-w-screen-lg mx-auto my-5 p-5 flex flex-col md:flex-row justify-center items-start md:space-x-5 space-y-5 md:space-y-0">
             {projectsDescription.map(project => (
-              <ProjectCard key={project.id} project={project} />
+              <ProjectCard
+                key={project.id}
+                project={project}
+                setProjectInfo={setProjectInfo}
+              />
             ))}
           </div>
           <div className="flex justify-center space-x-3 max-w-screen-md mx-auto px-5 text-center">
