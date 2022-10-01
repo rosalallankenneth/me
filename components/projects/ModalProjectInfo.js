@@ -2,7 +2,14 @@ import React from "react";
 
 const ModalProjectInfo = props => {
   const { projectInfo, setProjectInfo } = props;
-  const { title, description, imgPath, imgAlt } = projectInfo;
+  const {
+    title,
+    description,
+    imgPath,
+    imgAlt,
+    githubLink,
+    demoLink
+  } = projectInfo;
   const handleCloseModal = () => setProjectInfo(null);
 
   return (
@@ -15,7 +22,9 @@ const ModalProjectInfo = props => {
           <div className="flex justify-start items-center space-x-1">
             <a
               className="flex justify-center items-center space-x-2 bg-gray-900 px-3 py-1 rounded-md text-white shadow"
-              href="#"
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <svg
                 className="h-4 w-4 text-white"
@@ -33,7 +42,9 @@ const ModalProjectInfo = props => {
             </a>
             <a
               className="flex justify-center items-center space-x-2 bg-orange-600 px-3 py-1 rounded-md text-white shadow"
-              href="#"
+              href={demoLink}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <svg
                 className="h-4 w-4 text-white"

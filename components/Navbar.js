@@ -116,14 +116,9 @@ export default function Navbar() {
             About Me
           </a>
         </Link>
-        <Link href="#resume">
-          <a
-            className="text-white hover:bg-gray-900 py-2 px-5 border-2 border-b-0 border-gray-900 transition-background duration-300"
-            onClick={toggleMobileNavbar}
-          >
-            Resume
-          </a>
-        </Link>
+        <Resume classes="text-white hover:bg-gray-900 py-2 px-5 border-2 border-b-0 border-gray-900 transition-background duration-300">
+          Resume
+        </Resume>
         <Link href="#contactme">
           <a
             className="text-white bg-blue-700 hover:bg-blue-900 py-2 px-5 border-2 border-gray-900 rounded-b transition-background duration-300"
