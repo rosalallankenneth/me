@@ -11,7 +11,9 @@ export const projectsDescription = [
     logoPath: process.env.ASSETS_BASE + "/images/projects/project-1-logo.png",
     logoAlt: "metierpic-logo",
     imgPath: process.env.ASSETS_BASE + "/images/projects/project-1-pic-1.PNG",
-    imgAlt: "metierpick-cover"
+    imgAlt: "metierpick-cover",
+    githubLink: "https://github.com/rosalallankenneth/metierpick",
+    demoLink: "https://rosalallankenneth.github.io/metierpick"
   },
   {
     id: 2,
@@ -24,7 +26,9 @@ export const projectsDescription = [
     logoPath: process.env.ASSETS_BASE + "/images/projects/project-2-logo.png",
     logoAlt: "mapquito-logo",
     imgPath: process.env.ASSETS_BASE + "/images/projects/project-2-pic-1.PNG",
-    imgAlt: "mapquito-cover"
+    imgAlt: "mapquito-cover",
+    githubLink: "https://github.com/rosalallankenneth/mapquito",
+    demoLink: "https://rosalallankenneth.github.io/mapquito"
   },
   {
     id: 3,
@@ -37,6 +41,9 @@ export const projectsDescription = [
     logoPath: <p id="baybayin-logo">Baybayin</p>,
     logoAlt: "",
     imgPath: process.env.ASSETS_BASE + "/images/projects/project-3-pic-1.PNG",
-    imgAlt: "baybayin-cover"
+    imgAlt: "baybayin-cover",
+    githubLink:
+      "https://github.com/rosalallankenneth/baybayin-reservation-system",
+    demoLink: "https://github.com/rosalallankenneth/baybayin-reservation-system"
   }
 ];
