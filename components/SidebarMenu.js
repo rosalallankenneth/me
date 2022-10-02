@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const SidebarMenu = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {

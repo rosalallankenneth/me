@@ -14,10 +14,10 @@ export default function ContactSection() {
 
         <div className="flex sm:flex-row flex-col justify-center items-center sm:space-x-7 space-x-0 sm:space-y-0 space-y-7 items-center my-16">
           <div className="flex flex-col sm:items-end items-center space-y-5">
-            <div className="rounded-full w-48 overflow-hidden">
+            <div className="rounded-full w-48 overflow-hidden border-2 border-yellow-500">
               <img
                 className="w-full"
-                src={`${process.env.ASSETS_BASE}/images/temp-pic.jpg`}
+                src={`${process.env.ASSETS_BASE}/images/contact-pic.jpg`}
                 alt="profile-pic"
               />
             </div>
