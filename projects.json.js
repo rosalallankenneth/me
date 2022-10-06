@@ -13,7 +13,15 @@ export const projectsDescription = [
     imgPath: process.env.ASSETS_BASE + "/images/projects/project-1-pic-1.PNG",
     imgAlt: "metierpick-cover",
     githubLink: "https://github.com/rosalallankenneth/metierpick",
-    demoLink: "https://rosalallankenneth.github.io/metierpick"
+    demoLink: "https://rosalallankenneth.github.io/metierpick",
+    tech: [
+      "Javascript",
+      "ReactJS",
+      "Material-UI",
+      "Redux",
+      "Firebase",
+      "Ajax/Axios"
+    ]
   },
   {
     id: 2,
@@ -28,7 +36,16 @@ export const projectsDescription = [
     imgPath: process.env.ASSETS_BASE + "/images/projects/project-2-pic-1.PNG",
     imgAlt: "mapquito-cover",
     githubLink: "https://github.com/rosalallankenneth/mapquito",
-    demoLink: "https://rosalallankenneth.github.io/mapquito"
+    demoLink: "https://rosalallankenneth.github.io/mapquito",
+    tech: [
+      "Javascript",
+      "ReactJS",
+      "Tailwind CSS",
+      "Context API",
+      "PHP",
+      "MySQL",
+      "Ajax/Axios"
+    ]
   },
   {
     id: 3,
@@ -44,6 +61,8 @@ export const projectsDescription = [
     imgAlt: "baybayin-cover",
     githubLink:
       "https://github.com/rosalallankenneth/baybayin-reservation-system",
-    demoLink: "https://github.com/rosalallankenneth/baybayin-reservation-system"
+    demoLink:
+      "https://github.com/rosalallankenneth/baybayin-reservation-system",
+    tech: ["HTML/CSS", "jQuery", "Bootstrap", "PHP", "MySQL", "Ajax"]
   }
 ];
