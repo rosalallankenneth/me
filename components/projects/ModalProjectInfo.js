@@ -8,7 +8,8 @@ const ModalProjectInfo = props => {
     imgPath,
     imgAlt,
     githubLink,
-    demoLink
+    demoLink,
+    tech
   } = projectInfo;
   const handleCloseModal = () => setProjectInfo(null);
 
@@ -89,6 +90,17 @@ const ModalProjectInfo = props => {
         </div>
         <div className="shadow-md rounded-lg">
           <img src={imgPath} alt={imgAlt} />
+        </div>
+        <div className="w-full space-x-1">
+          <label className="font-bold">Stack:</label>
+          {tech.map(tech => (
+            <small
+              key={tech}
+              className="inline-block shadow-md rounded-md px-3 py-1 bg-black text-gray-300 mt-1"
+            >
+              {tech}
+            </small>
+          ))}
         </div>
         <div className="flex flex-col justify-center items-start bg-gray-200 p-3 space-y-3 shadow-md rounded-lg">
           {description.map((paragraph, key) => (
