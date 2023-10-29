@@ -1,16 +1,9 @@
 import React from "react";
 
-const ModalProjectInfo = props => {
+const ModalProjectInfo = (props) => {
   const { projectInfo, setProjectInfo } = props;
-  const {
-    title,
-    description,
-    imgPath,
-    imgAlt,
-    githubLink,
-    demoLink,
-    tech
-  } = projectInfo;
+  const { title, description, imgPath, imgAlt, githubLink, demoLink, tech } =
+    projectInfo;
   const handleCloseModal = () => setProjectInfo(null);
 
   return (
@@ -41,28 +34,36 @@ const ModalProjectInfo = props => {
               </svg>
               <span>Github</span>
             </a>
-            <a
-              className="flex justify-center items-center space-x-2 bg-orange-600 px-3 py-1 rounded-md text-white shadow"
-              href={demoLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg
-                className="h-4 w-4 text-white"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+
+            {demoLink ? (
+              <a
+                className="flex justify-center items-center space-x-2 bg-orange-600 px-3 py-1 rounded-md text-white shadow"
+                href={demoLink}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                {" "}
-                <path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z" />{" "}
-                <path d="M13 13l6 6" />
-              </svg>
-              <span>Demo</span>
-            </a>
+                <svg
+                  className="h-4 w-4 text-white"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  {" "}
+                  <path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z" />{" "}
+                  <path d="M13 13l6 6" />
+                </svg>
+                <span>Demo</span>
+              </a>
+            ) : (
+              <div className="flex justify-center items-center space-x-2 bg-gray-300 px-3 py-1 rounded-md text-black shadow cursor-not-allowed">
+                Demo is not available
+              </div>
+            )}
           </div>
+
           <div>
             <button
               className="flex justify-center items-center space-x-2 bg-red-700 px-3 py-1 rounded-md text-white shadow"
@@ -88,12 +89,14 @@ const ModalProjectInfo = props => {
             </button>
           </div>
         </div>
+
         <div className="shadow-md rounded-lg">
           <img src={imgPath} alt={imgAlt} />
         </div>
+
         <div className="w-full space-x-1">
           <label className="font-bold">Stack:</label>
-          {tech.map(tech => (
+          {tech.map((tech) => (
             <small
               key={tech}
               className="inline-block shadow-md rounded-md px-3 py-1 bg-black text-gray-300 mt-1"
@@ -102,6 +105,7 @@ const ModalProjectInfo = props => {
             </small>
           ))}
         </div>
+
         <div className="flex flex-col justify-center items-start bg-gray-200 p-3 space-y-3 shadow-md rounded-lg">
           {description.map((paragraph, key) => (
             <p key={key} className="text-justify text-black">

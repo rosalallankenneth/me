@@ -1,8 +1,9 @@
 import React from "react";
 
-const ProjectCard = props => {
+const ProjectCard = (props) => {
   const { project, setProjectInfo } = props;
   const { title, type, imgPath } = project;
+
   return (
     <button
       style={{ backgroundImage: `url(${imgPath})` }}

@@ -28,10 +28,10 @@ export default function ProjectSection() {
           <p className="text-gray-300 text-center mt-3 px-5">
             I can build dynamic websites—from sophisticated landing pages to
             complex web systems and applications. Here are some of my featured
-            projects.
+            personal projects.
           </p>
           <div className="max-w-screen-lg mx-auto my-5 p-5 flex flex-col md:flex-row justify-center items-start md:space-x-5 space-y-5 md:space-y-0">
-            {projectsDescription.map(project => (
+            {projectsDescription.map((project) => (
               <ProjectCard
                 key={project.id}
                 project={project}
